@@ -1,0 +1,114 @@
+body {
+    background-color: #0280FB;
+}
+
+.nav2 {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+
+/* Style the navigation links */
+.nav2 a {
+    display: inline-block;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin-right: 10px; /* Adjust this value to control the spacing between links */
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+a {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+/* Style the drop-down buttons to display inline-block */
+.safety2, .business2, .todo2 {
+    display: inline-block;
+    position: relative; /* Add this property to enable absolute positioning for the dropdown */
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 20px;
+}
+
+/* Style the drop-down button */
+.dropbutton2 {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 8px 16px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: whitesmoke;
+}
+
+/* Hide dropdown content by default */
+.safety-content2, .business-content2, .todo-content2 {
+    display: none;
+    position: absolute; /* Position absolutely relative to the parent */
+    top: 100%; /* Position below the button */
+    left: 0; /* Align with the left edge of the button */
+    z-index: 1; /* Ensure dropdown is on top of other content */
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 20px;
+    }
+/* Show dropdown content when the button is hovered */
+.safety2:hover .safety-content2, .business2:hover .business-content2, .todo2:hover .todo-content2 {
+    display: block;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+/* Style the dropdown content links */
+.safety-content2 a, .business-content2 a, .todo-content2 a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: whitesmoke;
+    margin-bottom: 10px; /* Adjust this value to control the spacing between links */
+    font-size: 20px;
+}
+
+/* Style the dropdown content links on hover */
+.safety-content2 a:hover, .business-content2 a:hover, .todo-content2 a:hover {
+    background-color: #0280FB;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 60px;
+    color: whitesmoke;
+}
+
+p , h2 {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 19px;
+    color: whitesmoke;
+}
+
+ul {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 19px;
+    color: whitesmoke;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }

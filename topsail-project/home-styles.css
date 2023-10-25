@@ -1,0 +1,137 @@
+/* Reset list styles for the nav links */
+body {
+    background-color: #0280FB;
+}
+
+.nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+
+/* Style the navigation links */
+.nav a {
+    display: inline-block;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin-right: 10px; /* Adjust this value to control the spacing between links */
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+a {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+/* Style the drop-down buttons to display inline-block */
+.safety, .business, .todo {
+    display: inline-block;
+    position: relative; /* Add this property to enable absolute positioning for the dropdown */
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 20px;
+}
+
+/* Style the drop-down button */
+.dropbutton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 8px 16px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: whitesmoke;
+}
+
+/* Hide dropdown content by default */
+.safety-content, .business-content, .todo-content {
+    display: none;
+    position: absolute; /* Position absolutely relative to the parent */
+    top: 100%; /* Position below the button */
+    left: 0; /* Align with the left edge of the button */
+    z-index: 1; /* Ensure dropdown is on top of other content */
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 20px;
+    }
+/* Show dropdown content when the button is hovered */
+.safety:hover .safety-content, .business:hover .business-content, .todo:hover .todo-content {
+    display: block;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+/* Style the dropdown content links */
+.safety-content a, .business-content a, .todo-content a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: whitesmoke;
+    margin-bottom: 10px; /* Adjust this value to control the spacing between links */
+    font-size: 20px;
+}
+
+/* Style the dropdown content links on hover */
+.safety-content a:hover, .business-content a:hover, .todo-content a:hover {
+    background-color: #0280FB;
+}
+
+/* Image */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* History of Topsail Beach Styles */
+
+h2 {
+    text-align: center;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 40px;
+    color: whitesmoke;
+}
+/* Paragraph Styles */
+
+p {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 19px;
+    color: whitesmoke;
+}
+.banner-text {
+    position: absolute;
+    top: 25%; /* Adjust vertical position as needed */
+    left: 50%; /* Adjust horizontal position as needed */
+    transform: translate(-50%, -50%); /* Center the text */
+    color: white;
+    padding: 10px; /* Adjust padding as needed */
+}
+
+h1 {
+    font-family: 'Lobster', sans-serif;
+    font-size: 110px;
+}
+
+.p1-p4 {
+    padding-left: 35px;
+}
+
+.p5-p6 {
+    padding-right: 35px;
+    margin-left: 20px;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .banner-text h1 {
+        font-size: 60px; /* Adjust the size for smaller screens */
+    }
+}
+
+/* Media query for even smaller screens */
+@media screen and (max-width: 480px) {
+    .banner-text h1 {
+        font-size: 40px; /* Adjust the size for even smaller screens */
+    }
+}

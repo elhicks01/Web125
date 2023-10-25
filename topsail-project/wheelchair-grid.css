@@ -1,0 +1,51 @@
+.grid-container2 {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%; /* Create two equal-width columns */
+    grid-gap: 10px; /* Set the gap between columns */
+}
+
+/* Viewport */
+
+@supports (grid-area: auto) {
+    .grid-container2 {
+      max-width: none;
+      display: grid;
+      grid-template-columns: 1fr; /* Mobile-first: Single column for smaller screens */
+    }
+  
+    .nav2 {
+      grid-column: 1; /* Occupies the whole single column */
+    }
+  
+    }
+
+    /* Media query for screens with a minimum width of 40em (640px) */
+    @media screen and (min-width: 40em) {
+      .grid-container2 {
+        grid-template-columns: repeat(5, 1fr); /* 5 equal-width columns */
+      }
+  
+      .nav2 {
+        grid-column: 1 / span 2; /* Spans 2 out of 5 columns */
+      }
+
+      .beach-wheelchair {
+        grid-column: 1 / -1;
+    }
+
+        .info {
+            grid-column: 2 / span 3;
+        }
+        }
+
+        .info2 {
+            grid-column: 2 / span 5;
+        }
+    
+        .info3 {
+            grid-column: 2 / span 3;
+        }
+
+    footer {
+        grid-column: 3 / span 4;
+    }

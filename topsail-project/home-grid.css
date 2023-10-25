@@ -1,0 +1,86 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%; /* Create two equal-width columns */
+    grid-gap: 10px; /* Set the gap between columns */
+}
+
+/* Viewport */
+
+@supports (grid-area: auto) {
+    .grid-container {
+      max-width: none;
+      display: grid;
+      grid-template-columns: 1fr; /* Mobile-first: Single column for smaller screens */
+    }
+  
+    .nav {
+      grid-column: 1; /* Occupies the whole single column */
+    }
+  
+    .banner-image {
+      grid-column: 1; /* Occupies the whole single column */
+    }
+  
+    .history {
+      grid-column: 1; /* Occupies the whole single column */
+    }
+
+    .p1-p2 {
+        grid-column: 1;
+    }
+
+    .house-image {
+        grid-column: 1
+    }
+    .p5-p6  {
+        grid-column: 1;
+       }
+ 
+    .boat-image {
+         grid-column: 1;
+       }
+    }
+
+    /* Media query for screens with a minimum width of 40em (640px) */
+    @media screen and (min-width: 40em) {
+      .grid-container {
+        grid-template-columns: repeat(5, 1fr); /* 5 equal-width columns */
+      }
+  
+      .nav {
+        grid-column: 1 / span 2; /* Spans 2 out of 5 columns */
+      }
+  
+      .banner-image {
+        grid-column: 1 / span 5; /* Spans all 5 columns */
+      }
+  
+      .history {
+        grid-column: 1 / -1; /* Spans from the first column to the last column, taking up the whole row */
+        grid-row: 3; /* Specifies the row, in this example, it's the third row */
+      }
+ 
+      .p1-p4 {
+        grid-column: 3 / span 2;
+      }
+
+      .house-image {
+        grid-column: 1 / span 2;
+        grid-row: 4;
+      }
+    
+      .p5-p6  {
+       grid-column: 1 / span 2;
+      }
+
+      .boat-image {
+        grid-column: 3 / span 3;
+      }
+
+      .beach-wheelchair {
+        grid-column: 2 / -1;
+    }
+        }
+        footer {
+            grid-column: 3 / span 4;
+        }
